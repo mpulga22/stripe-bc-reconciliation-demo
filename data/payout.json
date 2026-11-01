@@ -1,0 +1,9 @@
+{
+  "id": "po_demo001",
+  "object": "payout",
+  "amount": 42898,
+  "currency": "usd",
+  "arrival_date": 1793318400,
+  "automatic": true,
+  "status": "paid"
+}

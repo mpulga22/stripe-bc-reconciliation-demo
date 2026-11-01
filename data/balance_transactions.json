@@ -1,0 +1,91 @@
+{
+  "object": "list",
+  "url": "/v1/balance_transactions",
+  "has_more": false,
+  "data": [
+    {
+      "id": "txn_demo001",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 12000,
+      "fee": 378,
+      "net": 11622,
+      "currency": "usd",
+      "created": 1793070000,
+      "description": "Invoice INV-1001",
+      "source": { "id": "ch_demo001", "object": "charge", "metadata": { "bc_customer_no": "C10000" } }
+    },
+    {
+      "id": "txn_demo002",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 4500,
+      "fee": 161,
+      "net": 4339,
+      "currency": "usd",
+      "created": 1793077200,
+      "description": "Invoice INV-1002",
+      "source": { "id": "ch_demo002", "object": "charge", "metadata": { "bc_customer_no": "C20000" } }
+    },
+    {
+      "id": "txn_demo003",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 8900,
+      "fee": 288,
+      "net": 8612,
+      "currency": "usd",
+      "created": 1793152800,
+      "description": "Invoice INV-1003",
+      "source": { "id": "ch_demo003", "object": "charge", "metadata": { "bc_customer_no": "C30000" } }
+    },
+    {
+      "id": "txn_demo004",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 15000,
+      "fee": 465,
+      "net": 14535,
+      "currency": "usd",
+      "created": 1793167200,
+      "description": "Invoice INV-1004",
+      "source": { "id": "ch_demo004", "object": "charge", "metadata": { "bc_customer_no": "C10000" } }
+    },
+    {
+      "id": "txn_demo005",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 2500,
+      "fee": 103,
+      "net": 2397,
+      "currency": "usd",
+      "created": 1793235600,
+      "description": "Online checkout",
+      "source": { "id": "ch_demo005", "object": "charge", "metadata": {} }
+    },
+    {
+      "id": "txn_demo006",
+      "object": "balance_transaction",
+      "type": "charge",
+      "amount": 6100,
+      "fee": 207,
+      "net": 5893,
+      "currency": "usd",
+      "created": 1793246400,
+      "description": "Invoice INV-1005",
+      "source": { "id": "ch_demo006", "object": "charge", "metadata": { "bc_customer_no": "C40000" } }
+    },
+    {
+      "id": "txn_demo007",
+      "object": "balance_transaction",
+      "type": "refund",
+      "amount": -4500,
+      "fee": 0,
+      "net": -4500,
+      "currency": "usd",
+      "created": 1793253600,
+      "description": "Refund for INV-1002",
+      "source": { "id": "re_demo001", "object": "refund", "charge": "ch_demo002", "metadata": {} }
+    }
+  ]
+}
