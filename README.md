@@ -16,6 +16,17 @@ You'll see a reconciliation report in the terminal, and the journal is saved
 to `output/journal_po_demo001.csv` with the same columns as Business Central's
 General Journals page.
 
+## Run the tests
+
+```
+dotnet test tests/StripeBcReconDemo.Tests
+```
+
+14 xUnit tests cover the posting rules: charges, refunds, fees and the payout
+line, a payout that is one cent short, charges with no customer number, refunds
+for charges outside the payout, other currencies, zero-decimal currencies such
+as JPY, and the sample data in `data/`.
+
 ## What it does
 
 | Stripe event | Business Central posting |
@@ -38,6 +49,8 @@ metadata are posted to a review customer and flagged.
 - `Models.cs`: Stripe and Business Central records, and the account map to
   change for a real chart of accounts
 - `Program.cs`: loads the data, prints the report, writes the CSV
+- `tests/StripeBcReconDemo.Tests/JournalBuilderTests.cs`: unit tests for the
+  posting rules and the reconciliation check
 
 ## Next steps
 
